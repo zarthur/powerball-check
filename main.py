@@ -48,6 +48,7 @@ class NumberLoader:
 def main(filename, drawing):
     if not os.path.exists(filename):
         print("{0} does not exist.".format(filename))
+        return
 
     numbers = NumberLoader(filename)
     matches = numbers.get_results(drawing)
